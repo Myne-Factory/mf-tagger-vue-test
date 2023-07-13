@@ -1,0 +1,53 @@
+:root {
+  --color-mfcore: rgb(5, 243, 17);
+  --color-white: white;
+  --color-black: black;
+
+  --color-bg-window: black;
+  --color-bg-fill: white;
+
+  --color-text-black: black;
+  --color-text-white: white;
+
+  --color-fillable-area: #dedede;
+
+  --color-button-default-fill: #000000;
+  --color-button-hover-fill: #293469;
+  --color-button-pressed-fill: #21273e;
+  --color-button-disabled-fill: #3f3b3b;
+  --color-button-disabled-text: #6b6b6b;
+  --color-button-focus-outline: #01bef3;
+  --color-button-focus-text: #fed600;
+
+  --color-confirm-good: #48742c;
+  --color-confirm-bad: #bb271a;
+
+  --font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family);
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: 2%;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 2%;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 2%;
+}

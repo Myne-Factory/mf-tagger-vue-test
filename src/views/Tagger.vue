@@ -15,7 +15,8 @@
               <v-img src="/MyneSmile.png"></v-img>
             </v-avatar>
           </template>
-          <v-app-bar-title>MF Tagger</v-app-bar-title>
+          <v-app-bar-title><h1>MF Tagger</h1></v-app-bar-title>
+          <Checkbox />
         </v-toolbar>
       </template>
       <TagPicker />
@@ -28,6 +29,7 @@
 </template>
 
 <script lang="ts">
+import Checkbox from "@/components/ui/Checkbox.vue";
 import { ImageRecord, DatasetMetaResponse, TagDef } from "@/types/AllTypes";
 import ImageGrid from "@/components/ImageGrid.vue";
 import TagPicker from "@/components/TagPicker.vue";
@@ -42,7 +44,7 @@ export default {
       local_user_tags: {} as Record<string, Set<string>>,
     };
   },
-  components: { ImageGrid, TagPicker, MenuBar },
+  components: { ImageGrid, TagPicker, MenuBar, Checkbox },
   async mounted() {
     let response = await axios.get(BASE_URL + "/api/meta");
     if (response.status == 200) {
