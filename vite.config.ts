@@ -25,7 +25,7 @@ export default defineConfig({
     extensions: [".js", ".json", ".jsx", ".mjs", ".ts", ".tsx", ".vue"],
   },
   server: {
-    port: 3001,
+    port: 3000,
   },
-  base: "/tagger/",
+  base: "/",
 });
