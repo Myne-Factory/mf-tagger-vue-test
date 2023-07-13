@@ -1,1 +1,1 @@
-export const BASE_URL = "http://tagger.localhost:8080";
+export const BASE_URL = "http://25.47.183.56:8080";
